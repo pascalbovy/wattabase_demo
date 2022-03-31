@@ -10,6 +10,8 @@ library(DT)
 # LOAD NECESSARY DATA
 df_wind <- read_csv("data/db_wind_accepted.csv") #, locale(encoding = "latin1"))
 
+# HUST A SMALL CHANGE TO TEST GIT PUSH
+
 df_wind <- df_wind %>% 
   mutate(date_AE = as_date(date_AE, format = '%d-%m-%y'))
 
